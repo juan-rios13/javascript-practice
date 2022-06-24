@@ -1,12 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+//unless otherwise written syntax is like c++
+/* Data Types: undefined, null, boolean. string. symbol, number and object
+*/
+
+var myName = "Beau"; //var means variable
+
+myName=8;
+
+const pi = 3.14;
+var a;
+a=7;
+
+console.log(a) //bascially cout
+
+//can do this
+var c = "I am a";
+c=c+" string!";
+
+var myStr="double qoutes \"work like\" this"; //can do same thing by doing ' ' and begginig and end 
+console.log(myStr);
+
+/***
+ \n  new line
+ \t tab
+ \b backspace
+ */
+//can do math operations like in c++ with strings, mostly addition stuff
+
+var myStr = "FristLine\n\t\\SecondLine\nThirdLine";
+console.log(myStr);
+
+var FirstLetterofFirstName = "";
+var firstName= "ada"
+FirstLetterofFirstName=firstName[0]; //var will equal a, first letter in first name variable
+var lastLetterofLastName=firstName[firstName.length-1]; // will get last letter
+
+///////////functions exampke//////////
+
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+    var result ="";
+    result+="the " + myAdjective+ " "+ myNoun+" "+myVerb+ " " + "to the store " + myAdverb;
+    return result;
+}
+
+console.log(wordBlanks("dog", "big", "ran", "quickly"))
+
+//arrays can jave any data type//
+//example
+var ourArray=["John", 233];
+//can do arrasy inside arrays
+var myArray =[["Bulls",123], ["eagles", 23]];
+var myData=myArray[0][0]; //how otnaccess nested arrays
+var ourArray= [1,2,3];
+var removedFromOurArray = ourArray.pop(); //removes ast elemnt, can also do .shift whihc takes first elemnt of array, .push adds elemernt to end, .unshift adds element to begging of array 
+
+
+/////cna have global varoable sby default in ajavascript///
+var myGlobal = 10;
+
+if (typeof myGlobal!="undefined"){  //typeof checks variable type
+    //run whatever
+}
+
+//if var isnt added to keywrod the varibale becomes global wheever it is 
+
+Math.random; //retunrs random number
+Math.floor(Math.random() * 20) //goes to nearest whole number
+pasreInt(Str); //returns string as integer
+ "use strict"; //catches coding mistakes pu at top of file 
+ 
+ //let only decalresd varibalke in that block 
